@@ -1,0 +1,24 @@
+<section id=submit_form>
+        <h2>新規投稿</h2>
+        <form action="#" method="post">
+                <input type="hidden" name="_method" value="POST">
+            名前: <input type="text" name="name" id="name" value="名無し" required="required"　maxlength="32"><br>
+            本文: <textarea name="value" id="value" cols=100 rows=10 resize:none required="required" wrap=hard maxlength="1024"></textarea><br>
+            カラー: <select name="fcolor" id="fcolor">
+                <option value="black" selected>黒</option>
+                <option value="red">赤</option>
+                <option value="blue">青</option>
+                <option value="yellow">黄</option>
+                <option value="green">緑</option>
+                </select></p>
+            文字サイズ: <select name="fsize" id="fsize">
+                <option value="2">小</option>
+                <option value="3" selected>中</option>
+                <option value="5">大</option>
+                <option value="7">特大</option>
+                </select></p>
+            ツリー表示(既存投稿のid):
+            <input type="text" name="dest" id="dest" oninput="value = value.replace(/[^0-9]+/i,'');" />
+            <input type="submit" id="sbtn" value="投稿">
+        </form>
+    </section>
