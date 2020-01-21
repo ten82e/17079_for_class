@@ -1,1 +1,2 @@
 # 17079_for_class
+別途mysqlをlocalに作る必要あり
